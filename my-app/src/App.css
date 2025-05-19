@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --main-colour: red;
+  --main-font: 1rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  gap: 20px;
+}
+
+.logo-text {
+  color: var(--main-colour);
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.download-options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 2rem;
+}
+
+.download-options span {
+  font-size: 14px;
+}
+
+.download-options span:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.download-options .opt-1::before {
+  content: '';
+  background-color: rgb(153, 51, 51);
+  width: 100%;
+  height: 10px;
+}
+
+.content-1 {
+  margin-top: 65px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #4a474c;
+}
+
+.para-1 {
+  font-size: 1rem;
+  color: hsla(270, 3%, 29%, 0.87);
+}
+
+.download--section {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.download--section input {
+  width: 90%;
+  max-width: 650px;
+  height: 60px;
+  border: 1px solid hsla(0, 100%, 50%, 0.582);
+  border-radius: 20px;
+  padding-left: 10px;
+  outline: none;
+}
+
+.submit-btn {
+  padding: 1rem 3rem;
+  border-radius: 20px;
+  border: none;
+  background-color: red;
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: darkred;
+}
